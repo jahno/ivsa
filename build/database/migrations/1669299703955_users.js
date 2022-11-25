@@ -14,7 +14,7 @@ class default_1 extends Schema_1.default {
             table.increments("id").primary();
             table.string("nom", 255);
             table.string("numero");
-            table.enum("ecole", ["ISGA", "ARTCOM"]);
+            table.string("ecole");
             table.text("description");
             table.string("photo", 255);
             table.string("email", 255).notNullable().unique();
